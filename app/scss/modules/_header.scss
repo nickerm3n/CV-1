@@ -1,0 +1,61 @@
+.header {
+	min-height: calc(100vh);
+	background: url('../images/header-bg.JPG') no-repeat top center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	color: $white;
+	transition: .2s;
+
+
+	
+
+	&::after {
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: -moz-linear-gradient(top, rgba(28,47,48,0.73) 0%, rgba(1,1,1,0.37) 52%, rgba(0,0,0,0.37) 53%, rgba(51,16,16,0.57) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(28,47,48,0.73) 0%,rgba(1,1,1,0.37) 52%,rgba(0,0,0,0.37) 53%,rgba(51,16,16,0.57) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(28,47,48,0.73) 0%,rgba(1,1,1,0.37) 52%,rgba(0,0,0,0.37) 53%,rgba(51,16,16,0.57) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba1c2f30', endColorstr='#91331010',GradientType=0 ); /* IE6-9 */
+		@include pos($t:0, $l:0);
+		z-index: 0;
+
+	}
+	&__title {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 20px;
+
+		
+		&-wrap {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: relative;
+			padding: 100px;
+			top: 30vh;
+			z-index: 2;
+			background: rgba(0,0,0, .7);
+		
+			border-top: 2px solid $pink;
+			border-bottom:  2px solid $pink;
+			transition: .3s;
+			
+
+
+
+		}
+
+	}
+	&__respray {
+		color: $pink;
+	}
+	&__desc {
+		font-size: 1.2rem;
+		font-weight: 700;
+		text-align: center;
+		letter-spacing: 3px;
+		
+	}
+}

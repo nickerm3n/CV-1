@@ -1,0 +1,97 @@
+.navigation {
+	&-wrap {
+		background: rgba(242, 141, 141, .95);	
+		height: 100px;
+		display: flex;
+		align-items: center;
+	}
+	&__bar {
+		background: rgba(0,0,0, .9);
+		height: 95px;
+		width: 100%;
+		display: flex;
+		transition: .3s;
+		align-items: center;
+		
+		&--notransition {
+			transition: none;
+		}
+		&--margin {
+			margin-right: 6px;
+		}
+		&--fixed {
+			background: rgba(0,0,0, .5);
+			box-shadow: 0 0 15px rgba(0,0,0, .8);
+			position: fixed;
+			top: 0;
+			z-index: 99;
+			height: 50px;
+		}
+
+	}
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	&__list {
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		
+	}
+	&__link {
+		color: $white;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1.5rem;
+		transition: .1s;
+
+		&::before {
+			content: '< ';
+			color: transparent;
+		}
+		&::after {
+			content: ' >';
+			color: transparent;
+		}
+		&:hover {
+			text-decoration: none;
+			color: #fff;
+		}
+		&:hover::before {
+			color: $pink;
+		}
+		&:hover::after {
+			color: $pink;
+		}
+	}
+	&__logo {
+		font-size: 1.5em;
+		font-weight: 700;
+		color: $white;
+		&::before {
+			content: '< ';
+			color: transparent;
+		
+		}
+		&::after {
+			content: ' >';
+			color: transparent;
+		
+		}
+		&:hover {
+			text-decoration: none;
+			color: #fff;
+		}
+		&:hover::before {
+			color: $pink;
+		}
+		&:hover::after {
+			color: $pink;
+		}
+
+	}
+}

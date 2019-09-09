@@ -1,0 +1,112 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+	font: 14px $font;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+// Main styles
+
+.resume-container {
+	max-width: 1230px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	z-index: 2;
+	position: relative;
+}
+.respray {
+	color: $pink;
+}
+
+.flex-row--about {
+	display: flex;
+	padding: 50px 2%;
+}
+
+body {
+	background: url('../images/body-bg.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+
+.modal {
+	&-content {
+		// background: #000;
+	}
+	&-header {
+		background: $pink;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1.2rem;
+	}
+	&__list {
+
+	}
+	&__item {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+		&::before {
+			content: '>';
+			color: $pink;
+			position: relative;
+			left: -5px;
+		}
+	}
+
+}
+
+.scroll-disabled {
+	overflow: hidden;
+	transition: all .2s;
+
+}
+
+
+
+	// scroll-bar
+
+::-webkit-scrollbar { 
+    width: 6px;
+    background: #000;
+  }
+
+  ::-webkit-scrollbar-track { 
+  	background: rgba(0,0,0, .5);
+  
+  }
+  ::-webkit-scrollbar-track-piece { 
+  	background: rgba(0,0,0, .5);
+  }
+
+  ::-webkit-scrollbar-thumb { 
+    border-radius: 5px;
+    background-color: $pink;
+  }
+
+.hidden {
+	display: none;
+}

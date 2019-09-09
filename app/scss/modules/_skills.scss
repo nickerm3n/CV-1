@@ -1,0 +1,102 @@
+.skills {
+	background: $white;
+	padding: 50px 0;
+	&--margin {
+		margin-right: 6px;
+	}
+	&__title {
+		font-size: 3rem;
+		text-align: center;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+	}
+	&__desc {
+		font-size: 1.5em;
+		line-height: 2rem;
+		max-width: 75%;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	&__wrap {
+		background: #fff;
+		max-width: 85%;
+		margin: 0 auto;
+		box-shadow: 0 0 10px 2px rgba(0,0,0, .1);
+		margin-bottom: 50px;
+		padding: 40px 20px;
+	}
+	&__info {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__subject {
+		font-size: 1.3rem;
+	}
+	&__percentage {
+		font-size: 1.3rem;
+	}
+	&__statusbar,
+	&__statusbar-fill {
+		
+		height: 5px;
+		border-radius: 15px;
+
+	}
+	&__statusbar {
+		background: lighten($pink, 25%);
+		width: 100%;
+		margin-bottom: 30px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	&__statusbar-fill {
+		background: $pink;
+		width: 80%;
+	}
+	&__statusbar-fill-75 {
+		width: 75%;
+	}
+	&__statusbar-fill-90 {
+		width: 90%;
+	}
+	&__statusbar-fill-70 {
+		width: 70%;
+	}
+	&__statusbar-fill-80 {
+		width: 80%;
+	}
+	&__statusbar-fill-85 {
+		width: 85%;
+	}
+	&__list {
+		max-width: 70%;
+		margin: 0 auto;	
+		margin-bottom: 30px;	
+	}
+	&__item {
+		font-size: 1.3rem;
+		line-height: 2rem;
+		position: relative;
+		&::before {
+			content: '>';
+			font-size: 1.5rem;
+			font-weight: 700;
+			color: $pink;
+			position: relative;
+			left: -10px;
+		}
+	
+	} 
+	&__open {
+		color: lighten($pink,10%);
+		cursor: pointer;
+		&:hover {
+			color: $pink;
+		}
+		
+		
+	}
+}
